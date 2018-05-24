@@ -5,11 +5,11 @@
 const read = (stream, size, limit, callback) => {
   stream.on('readable', () => {
     if (limit) {
-      callback(readable.read(size));
+      callback(stream.read(size));
     } else {
       let buffers = [];
       let len;
-      while (null !== (chunk = readable.read())) {
+      while (null !== (chunk = stream.read())) {
         buffers.push(chunk);
         len += chunk.length;
       }
