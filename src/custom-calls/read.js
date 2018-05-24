@@ -9,7 +9,8 @@ const read = (stream, size, limit, callback) => {
     } else {
       let buffers = [];
       let len;
-      while (null !== (chunk = stream.read())) {
+      let chunk;
+      while (null !== (chunk = stream.read(size))) {
         buffers.push(chunk);
         len += chunk.length;
       }
