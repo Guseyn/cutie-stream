@@ -1,5 +1,22 @@
 module.exports = {
 
+  DestroyedReadable: require('./src/readable/DestroyedReadable'),
+  IsPaused: require('./src/readable/IsPaused'),
+  PausedReadable: require('./src/readable/PausedReadable'),
+  PipedReadable: require('./src/readable/PipedReadable'),
+  ReadableHighWaterMark: require('./src/readable/ReadableHighWaterMark'),
+  ReadableWithCloseEvent: require('./src/readable/ReadableWithCloseEvent'),
+  ReadableWithDataEvent: require('./src/readable/ReadableWithDataEvent'),
+  ReadableWithEncoding: require('./src/readable/ReadableWithEncoding'),
+  ReadableWithEndEvent: require('./src/readable/ReadableWithEndEvent'),
+  ReadableWithErrorEvent: require('./src/readable/ReadableWithErrorEvent'),
+  ReadableWithReadableEvent: require('./src/readable/ReadableWithReadableEvent'),
+  ReadDataFromReadable: require('./src/readable/ReadDataFromReadable'),
+  ResumedReadable: require('./src/readable/ResumedReadable'),
+  UnpipedReadable: require('./src/readable/UnpipedReadable'),
+  UnshiftedReadable: require('./src/readable/UnshiftedReadable'),
+  WrappedReadable: require('./src/readable/WrappedReadable'),
+
   CorkedWritable: require('./src/writable/CorkedWritable'),
   DestroyedWritable: require('./src/writable/DestroyedWritable'),
   EndWritable: require('./src/writable/EndWritable'),
