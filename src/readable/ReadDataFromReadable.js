@@ -16,6 +16,10 @@ class ReadDataFromReadable extends AsyncObject {
     return read;
   }
 
+  callbackWithError() {
+    return false;
+  }
+
 }
 
 module.exports = ReadDataFromReadable;
