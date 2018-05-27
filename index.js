@@ -29,6 +29,30 @@ module.exports = {
   WritableWithOneTimeDrainEvent: require('./src/writable/WritableWithOneTimeDrainEvent'),
   WritableWithPipeEvent: require('./src/writable/WritableWithPipeEvent'),
   WritableWithUnpipeEvent: require('./src/writable/WritableWithUnpipeEvent'),
-  WrittenWritable: require('./src/writable/WrittenWritable')
+  WrittenWritable: require('./src/writable/WrittenWritable'),
+
+  DestroyedStream: require('./src/readable/DestroyedReadable'),
+  PausedStream: require('./src/readable/PausedReadable'),
+  StreamHighWaterMark: require('./src/readable/ReadableHighWaterMark'),
+  StreamWithCloseEvent: require('./src/readable/ReadableWithCloseEvent'),
+  StreamWithDataEvent: require('./src/readable/ReadableWithDataEvent'),
+  StreamWithEncoding: require('./src/readable/ReadableWithEncoding'),
+  StreamWithEndEvent: require('./src/readable/ReadableWithEndEvent'),
+  StreamWithErrorEvent: require('./src/readable/ReadableWithErrorEvent'),
+  StreamWithReadableEvent: require('./src/readable/ReadableWithReadableEvent'),
+  ReadDataFromStream: require('./src/readable/ReadDataFromReadable'),
+  ResumedStream: require('./src/readable/ResumedReadable'),
+  UnpipedStream: require('./src/readable/UnpipedReadable'),
+  UnshiftedStream: require('./src/readable/UnshiftedReadable'),
+  WrappedStream: require('./src/readable/WrappedReadable'),
+  CorkedStream: require('./src/writable/CorkedWritable'),
+  EndStream: require('./src/writable/EndWritable'),
+  UncorkedStream: require('./src/writable/UncorkedWritable'),
+  StreamWithDefaultEncoding: require('./src/writable/WritableWithCloseEvent'),
+  StreamWithFinishEvent: require('./src/writable/WritableWithFinishEvent'),
+  StreamWithOneTimeDrainEvent: require('./src/writable/WritableWithOneTimeDrainEvent'),
+  StreamWithPipeEvent: require('./src/writable/WritableWithPipeEvent'),
+  StreamWithUnpipeEvent: require('./src/writable/WritableWithUnpipeEvent'),
+  StreamWritable: require('./src/writable/WrittenWritable')
 
 }
