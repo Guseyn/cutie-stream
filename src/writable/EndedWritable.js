@@ -3,7 +3,7 @@
 const AsyncObject = require('@guseyn/cutie').AsyncObject;
 
 // Represented result is writable
-class EndWritable extends AsyncObject {
+class EndedWritable extends AsyncObject {
 
   constructor(stream, chunk, encoding) {
     super(stream, chunk, encoding);
@@ -22,4 +22,4 @@ class EndWritable extends AsyncObject {
 
 }
 
-module.exports = EndWritable;
+module.exports = EndedWritable;

@@ -19,7 +19,7 @@ module.exports = {
 
   CorkedWritable: require('./src/writable/CorkedWritable'),
   DestroyedWritable: require('./src/writable/DestroyedWritable'),
-  EndWritable: require('./src/writable/EndWritable'),
+  EndedWritable: require('./src/writable/EndedWritable'),
   UncorkedWritable: require('./src/writable/UncorkedWritable'),
   WritableHighWaterMark: require('./src/writable/WritableHighWaterMark'),
   WritableWithCloseEvent: require('./src/writable/WritableWithCloseEvent'),
@@ -46,7 +46,7 @@ module.exports = {
   UnshiftedStream: require('./src/readable/UnshiftedReadable'),
   WrappedStream: require('./src/readable/WrappedReadable'),
   CorkedStream: require('./src/writable/CorkedWritable'),
-  EndStream: require('./src/writable/EndWritable'),
+  EndedStream: require('./src/writable/EndedWritable'),
   UncorkedStream: require('./src/writable/UncorkedWritable'),
   StreamWithDefaultEncoding: require('./src/writable/WritableWithCloseEvent'),
   StreamWithFinishEvent: require('./src/writable/WritableWithFinishEvent'),
