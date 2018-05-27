@@ -1,6 +1,6 @@
 {
   "name": "@guseyn/cutie-stream",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Cutie extension for stream module in Node.",
   "main": "index.js",
   "scripts": {
