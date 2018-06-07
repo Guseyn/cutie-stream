@@ -31,6 +31,7 @@ module.exports = {
   WritableWithUnpipeEvent: require('./src/writable/WritableWithUnpipeEvent'),
   WrittenWritable: require('./src/writable/WrittenWritable'),
 
+  // aliases for Streams, which are both Readable and Writable
   DestroyedStream: require('./src/readable/DestroyedReadable'),
   PausedStream: require('./src/readable/PausedReadable'),
   StreamHighWaterMark: require('./src/readable/ReadableHighWaterMark'),
