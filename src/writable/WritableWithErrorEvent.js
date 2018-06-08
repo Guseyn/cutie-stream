@@ -12,7 +12,7 @@ class WritableWithErrorEvent extends AsyncObject {
   // event is an Event with definedBody(error)
   definedSyncCall() {
     return (stream, event) => {
-      stream.on('error', errorEvent);
+      stream.on('error', event);
       return stream;
     }
   }
