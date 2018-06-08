@@ -23,7 +23,7 @@ module.exports = {
   UncorkedWritable: require('./src/writable/UncorkedWritable'),
   WritableHighWaterMark: require('./src/writable/WritableHighWaterMark'),
   WritableWithCloseEvent: require('./src/writable/WritableWithCloseEvent'),
-  WritableWithDefaultEncoding: require('./src/writable/WritableWithCloseEvent'),
+  WritableWithDefaultEncoding: require('./src/writable/WritableWithDefaultEncoding'),
   WritableWithErrorEvent: require('./src/writable/WritableWithErrorEvent'),
   WritableWithFinishEvent: require('./src/writable/WritableWithFinishEvent'),
   WritableWithOneTimeDrainEvent: require('./src/writable/WritableWithOneTimeDrainEvent'),
