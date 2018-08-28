@@ -5,10 +5,10 @@ const {
 } = require('stream');
 const {
   Assertion
-} = require('@guseyn/cutie-assert');
+} = require('@cuties/assert');
 const {
   Is
-} = require('@guseyn/cutie-is')
+} = require('@cuties/is')
 const {
   PipedReadable
 } = require('./../../index');

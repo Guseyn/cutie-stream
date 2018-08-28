@@ -1,6 +1,6 @@
 {
-  "name": "@guseyn/cutie-stream",
-  "version": "1.0.9",
+  "name": "@cuties/stream",
+  "version": "1.1.0",
   "description": "Cutie extension for stream module in Node.",
   "main": "index.js",
   "scripts": {
@@ -15,10 +15,10 @@
     "stream"
   ],
   "dependencies": {
-    "@guseyn/cutie": "1.4.0",
-    "@guseyn/cutie-assert": "1.1.0",
-    "@guseyn/cutie-is": "1.0.3",
-    "test-executor": "1.0.8"
+    "@cuties/cutie": "1.4.3",
+    "@cuties/assert": "1.1.4",
+    "@cuties/is": "1.0.6",
+    "test-executor": "1.1.0"
   },
   "author": "guseyn",
   "license": "MIT",

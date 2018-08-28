@@ -1,6 +1,6 @@
 'use strict'
 
-const AsyncObject = require('@guseyn/cutie').AsyncObject;
+const AsyncObject = require('@cuties/cutie').AsyncObject;
 
 // Custom call to read data via 'readable' event and the readable.read() method
 const read = require('./../custom-calls/read');

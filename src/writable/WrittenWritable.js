@@ -1,6 +1,6 @@
 'use strict'
 
-const AsyncObject = require('@guseyn/cutie').AsyncObject;
+const AsyncObject = require('@cuties/cutie').AsyncObject;
 
 // Custom call to avoid memory issues using the 'drain' event
 const write = require('./../custom-calls/write');
