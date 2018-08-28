@@ -2,16 +2,16 @@
 
 const {
   Event
-} = require('@guseyn/cutie');
+} = require('@cuties/cutie');
 const { 
   Readable 
 } = require('stream');
 const {
   Assertion
-} = require('@guseyn/cutie-assert');
+} = require('@cuties/assert');
 const {
   Is
-} = require('@guseyn/cutie-is')
+} = require('@cuties/is')
 const {
   ReadableWithEndEvent
 } = require('./../../index');

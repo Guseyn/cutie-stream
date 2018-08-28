@@ -14,7 +14,7 @@ You can find examples of using this library in the [test directory](https://gith
 ```js
 const {
   // Needed async objects here from the table below
-} = require('@guseyn/cutie-stream');
+} = require('@cuties/stream');
 ```
 For more information about parameters in the async objects visit [docs of Node](https://nodejs.org/en/docs/) for <b>stream</b> module.
 
@@ -57,6 +57,6 @@ For more information about parameters in the async objects visit [docs of Node](
 | `WritableWithUnpipeEvent` | `stream.on('unpipe', event)` | `stream, event(Event with definedBody(src))` | `stream` |
 | `WrittenWritable` | `stream.write` | `stream, chunk, encoding` | `stream` |
 
-[npm-image]: https://img.shields.io/npm/v/@guseyn/cutie-stream.svg
-[npm-url]: https://npmjs.org/package/@guseyn/cutie-stream
+[npm-image]: https://img.shields.io/npm/v/@cuties/stream.svg
+[npm-url]: https://npmjs.org/package/@cuties/stream
 

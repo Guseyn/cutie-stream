@@ -2,10 +2,10 @@
 
 const {
   Assertion
-} = require('@guseyn/cutie-assert');
+} = require('@cuties/assert');
 const {
   IsBoolean
-} = require('@guseyn/cutie-is')
+} = require('@cuties/is')
 const {
   IsPaused
 } = require('./../../index');
