@@ -1,20 +1,18 @@
 'use strict'
 
-const AsyncObject = require('@cuties/cutie').AsyncObject;
+const AsyncObject = require('@cuties/cutie').AsyncObject
 
 // Represented result is readable
 class ResumedReadable extends AsyncObject {
-
-  constructor(stream) {
-    super(stream);
+  constructor (stream) {
+    super(stream)
   }
 
-  definedSyncCall() {
+  definedSyncCall () {
     return (stream) => {
-      return stream.resume();
+      return stream.resume()
     }
   }
-
 }
 
-module.exports = ResumedReadable;
+module.exports = ResumedReadable

@@ -1,21 +1,19 @@
 'use strict'
 
-const AsyncObject = require('@cuties/cutie').AsyncObject;
+const AsyncObject = require('@cuties/cutie').AsyncObject
 
 // Represented result is writable
 class UncorkedWritable extends AsyncObject {
-
-  constructor(stream) {
-    super(stream);
+  constructor (stream) {
+    super(stream)
   }
 
-  definedSyncCall() {
+  definedSyncCall () {
     return (stream) => {
-      stream.uncork();
-      return stream;
+      stream.uncork()
+      return stream
     }
   }
-
 }
 
-module.exports = UncorkedWritable;
+module.exports = UncorkedWritable

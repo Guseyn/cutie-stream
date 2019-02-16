@@ -1,22 +1,20 @@
 'use strict'
 
-const AsyncObject = require('@cuties/cutie').AsyncObject;
+const AsyncObject = require('@cuties/cutie').AsyncObject
 
 // Represented result is readable
 class ReadableWithEndEvent extends AsyncObject {
-
-  constructor(stream, event) {
-    super(stream, event);
+  constructor (stream, event) {
+    super(stream, event)
   }
 
   // event is an Event with definedBody()
-  definedSyncCall() {
+  definedSyncCall () {
     return (stream, event) => {
-      stream.on('end', event);
-      return stream;
+      stream.on('end', event)
+      return stream
     }
   }
-
 }
 
-module.exports = ReadableWithEndEvent;
+module.exports = ReadableWithEndEvent

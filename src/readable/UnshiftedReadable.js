@@ -1,21 +1,19 @@
 'use strict'
 
-const AsyncObject = require('@cuties/cutie').AsyncObject;
+const AsyncObject = require('@cuties/cutie').AsyncObject
 
 // Represented result is readable
 class UnshiftedReadable extends AsyncObject {
-
-  constructor(stream, chunk) {
-    super(stream, chunk);
+  constructor (stream, chunk) {
+    super(stream, chunk)
   }
 
-  definedSyncCall() {
+  definedSyncCall () {
     return (stream, chunk) => {
-      stream.unshift(chunk);
-      return stream;
+      stream.unshift(chunk)
+      return stream
     }
   }
-
 }
 
-module.exports = UnshiftedReadable;
+module.exports = UnshiftedReadable

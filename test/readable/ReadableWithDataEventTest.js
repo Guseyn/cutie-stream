@@ -2,31 +2,29 @@
 
 const {
   Event
-} = require('@cuties/cutie');
-const { 
-  Readable 
-} = require('stream');
+} = require('@cuties/cutie')
+const {
+  Readable
+} = require('stream')
 const {
   Assertion
-} = require('@cuties/assert');
+} = require('@cuties/assert')
 const {
   Is
 } = require('@cuties/is')
 const {
   ReadableWithDataEvent
-} = require('./../../index');
-const CustomStream = require('./../CustomStream');
+} = require('./../../index')
+const CustomStream = require('./../CustomStream')
 
 class DataEvent extends Event {
-
-  constructor() {
-    super();
+  constructor () {
+    super()
   }
 
-  definedBody(chunk) {
-    // handle
+  definedBody (/* chunk */) {
+    // handle chunk
   }
-
 }
 
 new Assertion(
@@ -35,4 +33,4 @@ new Assertion(
       new CustomStream({}), new DataEvent()
     ), Readable
   )
-).call();
+).call()

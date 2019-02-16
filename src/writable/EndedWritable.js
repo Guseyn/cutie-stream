@@ -1,25 +1,23 @@
 'use strict'
 
-const AsyncObject = require('@cuties/cutie').AsyncObject;
+const AsyncObject = require('@cuties/cutie').AsyncObject
 
 // Represented result is writable
 class EndedWritable extends AsyncObject {
-
-  constructor(stream, chunk, encoding) {
-    super(stream, chunk, encoding);
+  constructor (stream, chunk, encoding) {
+    super(stream, chunk, encoding)
   }
 
-  definedAsyncCall() {
+  definedAsyncCall () {
     return (stream, chunk, encoding, callback) => {
-      this.stream = stream;
-      stream.end(chunk, encoding, callback);
+      this.stream = stream
+      stream.end(chunk, encoding, callback)
     }
   }
 
-  onResult() {
-    return this.stream;
+  onResult () {
+    return this.stream
   }
-
 }
 
-module.exports = EndedWritable;
+module.exports = EndedWritable

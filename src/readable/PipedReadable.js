@@ -1,22 +1,20 @@
 'use strict'
 
-const AsyncObject = require('@cuties/cutie').AsyncObject;
+const AsyncObject = require('@cuties/cutie').AsyncObject
 
 // Represented result is readable
 class PipedReadable extends AsyncObject {
-
-  constructor(stream, destination, options) {
+  constructor (stream, destination, options) {
     super(stream, destination, options || {
       end: true
-    });
+    })
   }
 
-  definedSyncCall() {
+  definedSyncCall () {
     return (stream, destination, options) => {
-      return stream.pipe(destination, options);
+      return stream.pipe(destination, options)
     }
   }
-
 }
 
-module.exports = PipedReadable;
+module.exports = PipedReadable

@@ -1,33 +1,31 @@
 'use strict'
 
-const { 
-  Writable 
-} = require('stream');
+const {
+  Writable
+} = require('stream')
 const {
   Event
-} = require('@cuties/cutie');
+} = require('@cuties/cutie')
 const {
   Assertion
-} = require('@cuties/assert');
+} = require('@cuties/assert')
 const {
   Is
 } = require('@cuties/is')
 const {
   DestroyedWritable,
   WritableWithErrorEvent
-} = require('./../../index');
-const CustomStream = require('./../CustomStream');
+} = require('./../../index')
+const CustomStream = require('./../CustomStream')
 
 class ErrorEvent extends Event {
-
-  constructor() {
-    super();
+  constructor () {
+    super()
   }
 
-  definedBody(error) {
-    // handle
+  definedBody (/* error */) {
+    // handle error
   }
-
 }
 
 new Assertion(
@@ -38,4 +36,4 @@ new Assertion(
       ), new Error('just destroyed')
     ), Writable
   )
-).call();
+).call()

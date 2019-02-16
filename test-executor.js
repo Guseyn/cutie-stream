@@ -1,4 +1,7 @@
+'use strict'
 
-const executor = require('test-executor');
+const { ExecutedTests } = require('test-executor')
 
-executor('./test/readable', './test/writable');
+new ExecutedTests(
+  './test'
+).call()

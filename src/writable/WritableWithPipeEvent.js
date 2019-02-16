@@ -1,22 +1,20 @@
 'use strict'
 
-const AsyncObject = require('@cuties/cutie').AsyncObject;
+const AsyncObject = require('@cuties/cutie').AsyncObject
 
 // Represented result is writable
 class WritableWithPipeEvent extends AsyncObject {
-
-  constructor(stream, event) {
-    super(stream, event);
+  constructor (stream, event) {
+    super(stream, event)
   }
 
   // event is an Event with definedBody(src), src is Readable
-  definedSyncCall() {
+  definedSyncCall () {
     return (stream, event) => {
-      stream.on('pipe', event);
-      return stream;
+      stream.on('pipe', event)
+      return stream
     }
   }
-
 }
 
-module.exports = WritableWithPipeEvent;
+module.exports = WritableWithPipeEvent

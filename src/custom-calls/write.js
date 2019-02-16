@@ -4,10 +4,10 @@
 // based on https://nodejs.org/dist/latest-v8.x/docs/api/stream.html#stream_writable_write_chunk_encoding_callback
 const write = (stream, chunk, encoding, callback) => {
   if (!stream.write(chunk, encoding)) {
-    stream.once('drain', callback);
+    stream.once('drain', callback)
   } else {
-    process.nextTick(callback);
+    process.nextTick(callback)
   }
 }
 
-module.exports = write;
+module.exports = write
