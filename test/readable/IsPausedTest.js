@@ -2,14 +2,14 @@
 
 const {
   Assertion
-} = require('@cuties/assert');
+} = require('@cuties/assert')
 const {
   IsBoolean
 } = require('@cuties/is')
 const {
   IsPaused
-} = require('./../../index');
-const CustomStream = require('./../CustomStream');
+} = require('./../../index')
+const CustomStream = require('./../CustomStream')
 
 new Assertion(
   new IsBoolean(
@@ -17,4 +17,4 @@ new Assertion(
       new CustomStream({})
     )
   )
-).call();
+).call()

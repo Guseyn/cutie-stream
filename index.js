@@ -15,7 +15,6 @@ module.exports = {
   ResumedReadable: require('./src/readable/ResumedReadable'),
   UnpipedReadable: require('./src/readable/UnpipedReadable'),
   UnshiftedReadable: require('./src/readable/UnshiftedReadable'),
-  WrappedReadable: require('./src/readable/WrappedReadable'),
 
   CorkedWritable: require('./src/writable/CorkedWritable'),
   DestroyedWritable: require('./src/writable/DestroyedWritable'),
@@ -34,7 +33,6 @@ module.exports = {
   // aliases for Streams, which are both Readable and Writable
   DestroyedStream: require('./src/readable/DestroyedReadable'),
   PausedStream: require('./src/readable/PausedReadable'),
-  StreamHighWaterMark: require('./src/readable/ReadableHighWaterMark'),
   StreamWithCloseEvent: require('./src/readable/ReadableWithCloseEvent'),
   StreamWithDataEvent: require('./src/readable/ReadableWithDataEvent'),
   StreamWithEncoding: require('./src/readable/ReadableWithEncoding'),
@@ -45,7 +43,6 @@ module.exports = {
   ResumedStream: require('./src/readable/ResumedReadable'),
   UnpipedStream: require('./src/readable/UnpipedReadable'),
   UnshiftedStream: require('./src/readable/UnshiftedReadable'),
-  WrappedStream: require('./src/readable/WrappedReadable'),
   CorkedStream: require('./src/writable/CorkedWritable'),
   EndedStream: require('./src/writable/EndedWritable'),
   UncorkedStream: require('./src/writable/UncorkedWritable'),
@@ -53,7 +50,6 @@ module.exports = {
   StreamWithFinishEvent: require('./src/writable/WritableWithFinishEvent'),
   StreamWithOneTimeDrainEvent: require('./src/writable/WritableWithOneTimeDrainEvent'),
   StreamWithPipeEvent: require('./src/writable/WritableWithPipeEvent'),
-  StreamWithUnpipeEvent: require('./src/writable/WritableWithUnpipeEvent'),
-  StreamWritable: require('./src/writable/WrittenWritable')
+  StreamWithUnpipeEvent: require('./src/writable/WritableWithUnpipeEvent')
 
 }

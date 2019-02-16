@@ -1,18 +1,18 @@
 'use strict'
 
-const { 
-  Writable 
-} = require('stream');
+const {
+  Writable
+} = require('stream')
 const {
   Assertion
-} = require('@cuties/assert');
+} = require('@cuties/assert')
 const {
   Is
 } = require('@cuties/is')
 const {
   WritableWithDefaultEncoding
-} = require('./../../index');
-const CustomStream = require('./../CustomStream');
+} = require('./../../index')
+const CustomStream = require('./../CustomStream')
 
 new Assertion(
   new Is(
@@ -20,4 +20,4 @@ new Assertion(
       new CustomStream({}), 'utf8'
     ), Writable
   )
-).call();
+).call()

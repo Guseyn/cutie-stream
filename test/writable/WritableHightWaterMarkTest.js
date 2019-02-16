@@ -2,14 +2,14 @@
 
 const {
   Assertion
-} = require('@cuties/assert');
+} = require('@cuties/assert')
 const {
   IsNumber
 } = require('@cuties/is')
 const {
   WritableHighWaterMark
-} = require('./../../index');
-const CustomStream = require('./../CustomStream');
+} = require('./../../index')
+const CustomStream = require('./../CustomStream')
 
 new Assertion(
   new IsNumber(
@@ -17,4 +17,4 @@ new Assertion(
       new CustomStream({})
     )
   )
-).call();
+).call()

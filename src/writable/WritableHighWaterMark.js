@@ -1,20 +1,18 @@
 'use strict'
 
-const AsyncObject = require('@cuties/cutie').AsyncObject;
+const AsyncObject = require('@cuties/cutie').AsyncObject
 
 // Represented result is number
 class WritableHighWaterMark extends AsyncObject {
-
-  constructor(stream) {
-    super(stream);
+  constructor (stream) {
+    super(stream)
   }
 
-  definedSyncCall() {
+  definedSyncCall () {
     return (stream) => {
-      return stream.writableHighWaterMark;
+      return stream.writableHighWaterMark
     }
   }
-
 }
 
-module.exports = WritableHighWaterMark;
+module.exports = WritableHighWaterMark

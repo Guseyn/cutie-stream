@@ -1,20 +1,18 @@
 'use strict'
 
-const AsyncObject = require('@cuties/cutie').AsyncObject;
+const AsyncObject = require('@cuties/cutie').AsyncObject
 
 // Represented result is writable
 class WritableWithDefaultEncoding extends AsyncObject {
-
-  constructor(stream, encoding) {
-    super(stream, encoding);
+  constructor (stream, encoding) {
+    super(stream, encoding)
   }
 
-  definedSyncCall() {
+  definedSyncCall () {
     return (stream, encoding) => {
-      return stream.setDefaultEncoding(encoding);
+      return stream.setDefaultEncoding(encoding)
     }
   }
-
 }
 
-module.exports = WritableWithDefaultEncoding;
+module.exports = WritableWithDefaultEncoding
