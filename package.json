@@ -16,12 +16,12 @@
     "stream"
   ],
   "dependencies": {
-    "@cuties/assert": "^1.1.9",
-    "@cuties/cutie": "^1.6.6",
-    "@cuties/is": "^1.0.12",
-    "@cuties/iterator": "^1.0.6",
-    "@cuties/wall": "^1.0.17",
-    "test-executor": "^1.1.32"
+    "@cuties/assert": "^1.1.10",
+    "@cuties/cutie": "^1.6.7",
+    "@cuties/is": "^1.0.13",
+    "@cuties/iterator": "^1.0.7",
+    "@cuties/wall": "^1.0.18",
+    "test-executor": "^1.1.33"
   },
   "author": "guseyn",
   "license": "MIT",
