@@ -11,7 +11,7 @@ class WrittenWritable extends AsyncObject {
     super(stream, chunk, encoding || undefined)
   }
 
-  definedAsyncCall () {
+  asyncCall () {
     return (stream, chunk, encoding, callback) => {
       this.stream = stream
       write(stream, chunk, encoding, callback)

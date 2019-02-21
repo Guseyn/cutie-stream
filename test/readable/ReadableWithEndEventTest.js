@@ -22,7 +22,7 @@ class EndEvent extends Event {
     super()
   }
 
-  definedBody () {
+  body () {
     // handle
   }
 }

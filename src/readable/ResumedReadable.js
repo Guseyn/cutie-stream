@@ -8,7 +8,7 @@ class ResumedReadable extends AsyncObject {
     super(stream)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return (stream) => {
       return stream.resume()
     }

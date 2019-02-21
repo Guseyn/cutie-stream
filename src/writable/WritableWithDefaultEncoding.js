@@ -8,7 +8,7 @@ class WritableWithDefaultEncoding extends AsyncObject {
     super(stream, encoding)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return (stream, encoding) => {
       return stream.setDefaultEncoding(encoding)
     }

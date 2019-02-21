@@ -22,7 +22,7 @@ class PipeEvent extends Event {
     super()
   }
 
-  definedBody () {
+  body () {
     // handle
   }
 }

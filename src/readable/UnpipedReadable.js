@@ -8,7 +8,7 @@ class UnpipedReadable extends AsyncObject {
     super(stream, destination)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return (stream, destination) => {
       return stream.unpipe(destination)
     }

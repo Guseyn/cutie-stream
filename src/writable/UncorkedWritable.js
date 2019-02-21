@@ -8,7 +8,7 @@ class UncorkedWritable extends AsyncObject {
     super(stream)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return (stream) => {
       stream.uncork()
       return stream

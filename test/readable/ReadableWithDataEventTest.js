@@ -22,7 +22,7 @@ class DataEvent extends Event {
     super()
   }
 
-  definedBody (/* chunk */) {
+  body (/* chunk */) {
     // handle chunk
   }
 }

@@ -10,7 +10,7 @@ class PipedReadable extends AsyncObject {
     })
   }
 
-  definedSyncCall () {
+  syncCall () {
     return (stream, destination, options) => {
       return stream.pipe(destination, options)
     }

@@ -8,7 +8,7 @@ class CorkedWritable extends AsyncObject {
     super(stream)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return (stream) => {
       stream.cork()
       return stream
