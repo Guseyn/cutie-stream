@@ -8,7 +8,7 @@ class PausedReadable extends AsyncObject {
     super(stream)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return (stream) => {
       return stream.pause()
     }

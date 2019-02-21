@@ -8,7 +8,7 @@ class EndedWritable extends AsyncObject {
     super(stream, chunk, encoding)
   }
 
-  definedAsyncCall () {
+  asyncCall () {
     return (stream, chunk, encoding, callback) => {
       this.stream = stream
       stream.end(chunk, encoding, callback)

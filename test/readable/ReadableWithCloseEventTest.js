@@ -22,7 +22,7 @@ class CloseEvent extends Event {
     super()
   }
 
-  definedBody (/* error */) {
+  body (/* error */) {
     // handle error
   }
 }

@@ -8,8 +8,8 @@ class ReadableWithDataEvent extends AsyncObject {
     super(stream, event)
   }
 
-  // event is an Event with definedBody(chunk)
-  definedSyncCall () {
+  // event is an Event with body(chunk)
+  syncCall () {
     return (stream, event) => {
       stream.on('data', event)
       return stream

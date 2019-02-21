@@ -22,7 +22,7 @@ class ReadableEvent extends Event {
     super()
   }
 
-  definedBody () {
+  body () {
     // handle
   }
 }

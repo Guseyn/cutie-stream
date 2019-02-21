@@ -22,7 +22,7 @@ class DrainEvent extends Event {
     super()
   }
 
-  definedBody () {
+  body () {
     // handle
   }
 }

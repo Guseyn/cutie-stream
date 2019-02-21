@@ -11,7 +11,7 @@ class ReadDataFromReadable extends AsyncObject {
     super(stream, size || undefined, limit || false)
   }
 
-  definedAsyncCall () {
+  asyncCall () {
     return read
   }
 

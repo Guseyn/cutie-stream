@@ -8,7 +8,7 @@ class UnshiftedReadable extends AsyncObject {
     super(stream, chunk)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return (stream, chunk) => {
       stream.unshift(chunk)
       return stream

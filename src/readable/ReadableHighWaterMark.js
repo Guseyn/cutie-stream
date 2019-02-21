@@ -8,7 +8,7 @@ class ReadableHighWaterMark extends AsyncObject {
     super(stream)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return (stream) => {
       return stream.readableHighWaterMark
     }

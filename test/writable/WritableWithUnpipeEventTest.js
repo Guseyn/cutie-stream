@@ -22,7 +22,7 @@ class UnpipeEvent extends Event {
     super()
   }
 
-  definedBody () {
+  body () {
     // handle
   }
 }

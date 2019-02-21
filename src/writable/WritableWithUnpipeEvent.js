@@ -8,8 +8,8 @@ class WritableWithUnpipeEvent extends AsyncObject {
     super(stream, event)
   }
 
-  // event is an Event with definedBody(src), src is Readable
-  definedSyncCall () {
+  // event is an Event with body(src), src is Readable
+  syncCall () {
     return (stream, event) => {
       stream.on('unpipe', event)
       return stream

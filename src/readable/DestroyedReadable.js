@@ -8,7 +8,7 @@ class DestroyedReadable extends AsyncObject {
     super(stream, error)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return (stream, error) => {
       return stream.destroy(error)
     }

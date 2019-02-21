@@ -8,8 +8,8 @@ class WritableWithOneTimeDrainEvent extends AsyncObject {
     super(stream, event)
   }
 
-  // event is an Event with definedBody()
-  definedSyncCall () {
+  // event is an Event with body()
+  syncCall () {
     return (stream, event) => {
       stream.once('drain', event)
       return stream
